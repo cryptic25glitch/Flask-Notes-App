@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block title %}{{ action }} Note{% endblock %}
+{% block content %}
+<h2>{{ action }} Note</h2>
+<form method="POST" class="mt-3">
+    <div class="mb-3">
+        <label class="form-label">Title</label>
+        <input class="form-control" name="title" value="{{ note.title if note else '' }}" required>
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Content</label>
+        <textarea class="form-control" name="content" rows="5" required>{{ note.content if note else '' }}</textarea>
+    </div>
+    <button type="submit" class="btn btn-success">{{ action }}</button>
+    <a href="{{ url_for('dashboard') }}" class="btn btn-secondary">Cancel</a>
+</form>
+{% endblock %}

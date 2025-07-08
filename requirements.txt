@@ -1,0 +1,13 @@
+
+flask
+Flask_SQLAlchemy
+Werkzeug
+flask_login
+Flask_Migrate
+Flask_WTF
+Flask_Bootstrap
+Flask_Cors
+Flask_Assets
+Flask_Script
+Flask_Excel     
+Flask
