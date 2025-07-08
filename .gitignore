@@ -1,3 +1,6 @@
 venv
-instance
-__pycache__
+instance/
+__pycache__/
+*.pyc
+*.pyo
+
